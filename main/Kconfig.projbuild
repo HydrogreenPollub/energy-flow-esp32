@@ -1,0 +1,27 @@
+menu "Motor Control Unit configuration"
+    
+    menu "ADC channels"
+
+        config PIN_VOLTAGE_SUPERCAPACITORS
+            int "Supercapacitors voltage ADC pin"
+            default 2
+
+        config PIN_VOLTAGE_FUEL_CELL
+            int "Fuel cell voltage ADC pin"
+            default 4
+
+        config PIN_CURRENT_SUPERCAPACITORS
+            int "Supercapacitors current ADC pin"
+            default 6
+
+        config PIN_CURRENT_FUEL_CELL
+            int "Fuel cell current ADC pin"
+            default 7
+                
+        config PIN_CURRENT_MOTOR
+            int "Motor current ADC pin"
+            default 8
+
+    endmenu
+
+endmenu
