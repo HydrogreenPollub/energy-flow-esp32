@@ -18,8 +18,9 @@ void app_main(void)
 {
     CO_ESP32_init();
 
-    while (1) {
-        //OD_requestTPDO(OD_getFlagsPDO(OD_ENTRY_H6400_vehicleSpeedFromMCU), 0x00);
+    while (1)
+    {
+        // OD_requestTPDO(OD_getFlagsPDO(OD_ENTRY_H6400_vehicleSpeedFromMCU), 0x00);
         ESP_LOGI(TAG, "Speed: %.3f", OD_RAM.x6400_vehicleSpeedFromMCU);
         vTaskDelay(1000 / portTICK_PERIOD_MS);
     }
